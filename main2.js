@@ -40,27 +40,41 @@ function maxOfThree(a,b,c){
 // and returns true if it is a vowel, false otherwise.
 // ---------------------
 
-function isVowel(char){
-  if (char == "a"){
-    return "True"
-  }
-  else if (char == "e"){
-    return "True"
-  }
-  else if (char == "i"){
-    return "True"
-  }
-  else if (char == "o"){
-    return "True"
-  }
-  else if (char == "u"){
-    return "True"
-  }
-  else
-  {
-    return "False"
-  }
-};
+// var isThisAVowel(char){
+//   if (char == "a" || char == || "e" || char == "i" || char == "o" || char == "u"){
+//     return true;
+//     else{
+//       return false;
+//     }
+//   }
+// }
+
+// function isVowel(char){
+//   if (char == "a"){
+//     return "True"
+//   }
+//   else if (char == "e"){
+//     return "True"
+//   }
+//   else if (char == "i"){
+//     return "True"
+//   }
+//   else if (char == "o"){
+//     return "True"
+//   }
+//   else if (char == "u"){
+//     return "True"
+//   }
+//   else
+//   {
+//     return "False"
+//   }
+// };
+
+var bestIsVowel = function (char){
+  var vowels = ["a", "e", "i", "o", "u"];
+  return vowels.includes(char);
+}
 
 // ---------------------
 // Write a function translate() that will translate a text into "Rovarspraket".
@@ -83,7 +97,8 @@ function rovarspraket(phrase){
      results = results + letter + "o" + letter
 }
   else{
-    results = results + letter
+    // results = results + letter
+    results += letter;
 }
 console.log(results);
 }

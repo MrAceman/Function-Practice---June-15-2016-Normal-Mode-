@@ -46,6 +46,13 @@ function getLength(aString){
   return aString.length;
 }
 
+var myLength = function (string){
+  var count = 0;
+  while(string[count] !== undefined) {
+    count++;
+  }
+  return count;
+}
 
 // Q4
 // Write a function called `greaterThan` that takes
@@ -62,6 +69,9 @@ function greaterThan(val1, val2){
   }
 };
 
+var evenGreaterThan = function(x,y){
+  return y > x;
+};
 
 // Q5
 // Write a function called `greet` that takes a
@@ -70,7 +80,7 @@ function greaterThan(val1, val2){
 // is the parameter that was passed in.
 
 function greet(singleParameter){
-  return ("Hello, " + singleParameter);
+  return ("Hello, " + singleParameter + "!");
 }
 
 
